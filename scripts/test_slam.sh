@@ -16,5 +16,9 @@ sleep 5
 xterm -e " rosrun gmapping slam_gmapping scan:=scan _base_frame:=chassis" &
 sleep 5
 
+# AMCL, tuned for the skid-steer robot
+# xterm -e " roslaunch home_service_robot amcl.launch" &
+# sleep 5
+
 # teleop
 xterm -e " rosrun teleop_twist_keyboard teleop_twist_keyboard.py"

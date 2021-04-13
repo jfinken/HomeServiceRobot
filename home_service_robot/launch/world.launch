@@ -2,7 +2,7 @@
 
 <launch>
   <!-- Robot pose -->
-  <arg name="x" default="-1"/>
+  <arg name="x" default="-10"/>
   <arg name="y" default="4"/>
   <arg name="z" default="0"/>
   <arg name="roll" default="0"/>
