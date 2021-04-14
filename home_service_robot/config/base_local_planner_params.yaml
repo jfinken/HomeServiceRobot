@@ -21,3 +21,8 @@ TrajectoryPlannerROS:
   occdist_scale: 0.02
 
   holonomic_robot: false
+
+  # JF: skid-steer robot cannot efficiently turn on
+  # it's Z-axis
+  yaw_goal_tolerance: 3.14
+  xy_goal_tolerance : 0.40
