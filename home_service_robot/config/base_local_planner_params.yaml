@@ -25,4 +25,4 @@ TrajectoryPlannerROS:
   # JF: skid-steer robot cannot efficiently turn on
   # it's Z-axis
   yaw_goal_tolerance: 3.14
-  xy_goal_tolerance : 0.40
+  xy_goal_tolerance : 0.50

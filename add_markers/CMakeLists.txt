@@ -10,6 +10,7 @@ project(add_markers)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   visualization_msgs
+  pick_objects
 )
 
 ## System dependencies are found with CMake's conventions
