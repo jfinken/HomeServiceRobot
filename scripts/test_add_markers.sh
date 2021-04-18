@@ -1,6 +1,6 @@
 #!/bin/sh
 
-xterm  -e  " source /opt/ros/noetic/setup.bash; roscore" & 
+xterm  -e  " roscore" & 
 sleep 5
 
 # launches gazebo and rviz

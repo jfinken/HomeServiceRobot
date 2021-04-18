@@ -5,14 +5,15 @@
 # xterm  -e  " gazebo " &
 # sleep 5
 
-xterm  -e  " source /opt/ros/noetic/setup.bash; roscore" & 
+xterm  -e  " roscore" & 
 sleep 5
 
 # launches gazebo and rviz
 xterm -e " roslaunch home_service_robot world.launch" &
 sleep 5
 
-# TODO: use launch file?
+# TODO:
+#   - Use a launch file for slam_gmapping. Change the map_update_interval to around 30.
 xterm -e " rosrun gmapping slam_gmapping scan:=scan _base_frame:=chassis" &
 sleep 5
 
