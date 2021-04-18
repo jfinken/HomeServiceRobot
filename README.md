@@ -7,6 +7,15 @@
 This project simulates a service robot capable of navigating to pick up zones, 
 picking up virual objects and delivering them to the destination zones. 
 
+In this case, a marker is published and rendered at the pickup zone.  Once the 
+skid-steer robot reaches the pickup zone, the marker is "acquired" by the robot 
+and removed from the scene.  The robot travels to an interim zone, then travels 
+to the drop-off zone. Once the robot reaches the drop-off zone, the marker is 
+again made visible simulation a drop-off.  
+
+See [pick_objects/src/pick_objects.cpp](pick_objects/src/pick_objects.cpp)
+for goal and marker poses.
+
 ### Installation
 
 ```bash
